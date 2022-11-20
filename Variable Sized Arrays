@@ -1,0 +1,38 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a, n, q, k, f;
+    
+    cin>>n>>q;
+    vector<vector<int>> arr; 
+    
+    for (int j; j<n; j++)
+    {
+        cin>>a;
+        vector<int> v_1(a);
+     
+        for (int i = 0; i < a; i++) 
+        {
+            cin >> v_1[i];
+        };
+        
+        arr.push_back(v_1);
+    };
+    
+    for (int y; y<q; y++)
+    {
+        cin>>k>>f;
+        
+        cout<<arr[k][f]<<endl;
+        
+    }
+    
+        
+    return 0;
+}
