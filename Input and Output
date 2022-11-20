@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int first_num,sec_num,third_num;
+    int sum;
+    cin>>first_num>>sec_num>>third_num;
+    sum=first_num+sec_num+third_num;
+    cout<<sum;
+      
+    return 0;
+}
